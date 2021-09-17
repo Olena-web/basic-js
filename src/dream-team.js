@@ -14,6 +14,20 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default function createDreamTeam(/* members */) {
-  throw new NotImplementedError('Not implemented');
+  
   // remove line with error and write your code here
+  function createDreamTeam(members) {
+  let secretObj = members.map((i) => {
+    if (typeof i === "string") {
+      return i[0];
+    }
+  });
+  const nameTeam = secretObj.sort().join("");
+  if (nameTeam !== "") {
+    return nameTeam;
+  } else {
+    return false;
+  }
+}
+
 }
