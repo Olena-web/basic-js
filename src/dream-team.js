@@ -15,8 +15,7 @@ import { NotImplementedError } from '../extensions/index.js';
  */
 export default function createDreamTeam(/* members */) {
   
-  // remove line with error and write your code here
-  function createDreamTeam(members) {
+  
   let secretObj = members.map((i) => {
     if (typeof i === "string") {
       return i[0];
@@ -30,4 +29,4 @@ export default function createDreamTeam(/* members */) {
   }
 }
 
-}
+
